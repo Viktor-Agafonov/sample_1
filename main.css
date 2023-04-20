@@ -1,0 +1,653 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+body {
+    display: flex;
+    justify-content: center;
+    background: #F7F7F7;
+}
+
+.wrapper {
+    font-family: 'Montserrat', sans-serif;
+    width: 70%;
+}
+
+/* header */
+
+.wrapper header {
+    width: 100%;
+    height: 6vh;
+    padding: 3% 0 1.5% 0;
+    display: flex;
+    background-color: white;
+}
+
+.wrapper header .logo {
+    font-weight: 700;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+    width: 12%;
+}
+
+.wrapper header .logo .logoName_1,
+.wrapper footer .logo .logoName_1 {
+    color: #2A90D9;
+}
+
+.wrapper header .logo .logoName_2,
+.wrapper footer .logo .logoName_2 {
+    color: #EE685F;
+}
+
+.wrapper header nav {
+    width: 76%;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    margin-left: 2%;
+    align-items: center;
+    color: #262729;
+}
+
+.wrapper header nav div {
+    margin-left: 5%;
+}
+
+.wrapper header .langСur {
+    width: 12%;
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+    color: #EE685F;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 4%;
+}
+
+
+/* main */
+
+.wrapper main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+/* section searchFon */
+
+.wrapper main .searchFon {
+    width: 100%;
+    height: 75vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+}
+
+.wrapper main .searchFon .sectionWrapper {
+    width: 90%;
+    height: 48vh;
+    background: url("img/Rectangle_5.png") center center/100% 100% repeat-x;
+}
+
+.wrapper main .searchFon .sectionWrapper h1 {
+    width: 100%;
+    height: 24%;
+    font-size: 48px;
+    font-weight: 700;
+    color: #262729;
+    margin-left: 3%;
+    padding-top: 5%;
+}
+
+.wrapper main .searchFon .sectionWrapper p {
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    color: #262729;
+    margin: 5% 0 0 3%;
+}
+
+.wrapper main #searchHotel {
+    width: 60%;
+    height: 6vh;
+    position: relative;
+    left: 21%;
+    top: 22vh;
+    background: #FFFFFF;
+    border: 1px solid #D6D6D6;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper main #searchHotel #search,
+.wrapper main #searchHotel #date {
+    width: 40%;
+    height: 43px;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+}
+
+.wrapper main #searchHotel #search:focus,
+.wrapper main #searchHotel #date:focus {
+    outline: none;
+}
+
+.wrapper main #searchHotel label {
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper main #searchHotel #forSearch img {
+    width: 70%;
+}
+
+.wrapper main #searchHotel #forDate img {
+    width: 90%;
+}
+
+.wrapper main #searchHotel #ok {
+    height: 80%;
+    right: 1%;
+    position: absolute;
+    top: 8%;
+    width: 6%;
+    border-radius: 50%;
+    background: url(img/icon-search.png) center center/70% 70% no-repeat;
+    background-color: #EE685F;
+    border: none;
+}
+
+/* section info */
+
+.wrapper main .info {
+    width: 100%;
+    height: 27%;
+    background: #F7F7F7;
+}
+
+.wrapper main .info .topText,
+.wrapper main .info .bottonText {
+    width: 100%;
+    height: 50%;
+    color: #262729;
+}
+
+.wrapper main .info .topText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrapper main .info .topText h2 {
+    font-weight: 600;
+    font-size: 40px;
+    color: #262729;
+}
+
+.wrapper main .info .topText p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #262729;
+    text-align: center;
+}
+
+.wrapper main .info .bottonText {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.wrapper main .info .bottonText .imgBottonText {
+    height: 74%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.wrapper main .info .bottonText .imgBottonText div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #d6e6f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper main .info .bottonText .imgBottonText div img {
+    width: 60%;
+    height: 60%;
+}
+
+.wrapper main .info .bottonText .imgBottonText h4 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #262729;
+}
+
+.wrapper main .info .bottonText .imgBottonText p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #262729;
+}
+
+/* section hotelMenu */
+
+.wrapper main .hotelMenu {
+    width: 100%;
+
+    background-color: white;
+}
+
+.wrapper main .hotelMenu h1 {
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    padding: 6% 0 6% 0;
+}
+
+.wrapper main .hotelMenu .allHotel {
+    width: 100%;
+    height: 48vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 6%;
+}
+
+.wrapper main .hotelMenu .allHotel .oneHotel {
+    width: 28%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper main .hotelMenu .allHotel .oneHotel .imgHotel img {
+    width: 100%;
+}
+
+.wrapper main .hotelMenu .allHotel .oneHotel p:nth-child(2) {
+    font-weight: 500;
+    font-size: 22px;
+    color: #262729;
+    margin: 4% 0 1% 0;
+}
+
+.wrapper main .hotelMenu .allHotel .oneHotel p:nth-child(3) {
+    font-weight: 400;
+    font-size: 16px;
+    color: #858585;
+}
+
+.wrapper main .hotelMenu .allHotel .oneHotel p:nth-child(4) {
+    font-weight: 400;
+    font-size: 18px;
+    color: #262729;
+    margin: 2% 0 5% 0;
+}
+
+.wrapper main .hotelMenu .allHotel .oneHotel h3 {
+    font-weight: 500;
+    font-size: 30px;
+    color: #2A90D9;
+}
+
+.wrapper main .hotelMenu .allHotel .oneHotel h3 span {
+    font-size: 18px;
+    line-height: 24px;
+    color: #2A90D9;
+}
+
+.wrapper main .hotelMenu .allHotel .oneHotel .icon_group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.wrapper main .hotelMenu .allHotel .oneHotel .icon_group div {
+    display: flex;
+    align-items: center;
+    width: 33%;
+}
+
+.wrapper main .hotelMenu .allHotel .oneHotel .icon_group div:nth-child(1) img,
+.wrapper main .hotelMenu .allHotel .oneHotel .icon_group div:nth-child(2) img {
+    width: 25px;
+    height: 25px;
+}
+
+.wrapper main .hotelMenu .allHotel .oneHotel .icon_group div:nth-child(3) img {
+    width: 20px;
+    height: 20px;
+}
+
+.wrapper main .hotelMenu .allHotel .oneHotel .icon_group div p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #858585;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.wrapper main .hotelMenu .allHotel .oneHotel .showMap,
+.wrapper main .hotelMenu .allHotel .oneHotel .showImg,
+.wrapper main .hotelMenu .allHotel .oneHotel .showVideo {
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    color: #EE685F;
+    margin-bottom: 3%;
+    border: 1px solid;
+}
+
+.iframeDiv {
+    width: 60%;
+    height: 50%;
+    border: 0;
+    position: fixed;
+    z-index: 3;
+    left: 20vw;
+    top: 28vh;
+}
+
+.iframeDiv .iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.iframeDiv .btnCloseIframe {
+    text-align: center;
+    position: relative;
+    width: 3vw;
+    height: 7vh;
+    border-radius: 50%;
+    right: -98%;
+    top: 4%;
+    background-color: #ee685f;
+    border: 1px solid #d6e6f2;
+    color: #d6e6f2;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* section sliderWrapper */
+
+.wrapper main .sliderWrapper {
+    width: 100%;
+    height: 42vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+.wrapper main .sliderWrapper .banner {
+    width: 12%;
+    height: 100%;
+}
+
+.wrapper main .sliderWrapper .firstBanner {
+    background: url("img/sale1.png") center center/100% 100% repeat-x;
+}
+
+.wrapper main .sliderWrapper .secondBanner {
+    background: url("img/sale2.png") center center/100% 100% repeat-x;
+}
+
+.wrapper main .sliderWrapper .carousel {
+    display: flex;
+    position: relative;
+    width: 56%;
+    height: 100%;
+}
+
+.wrapper main .sliderWrapper .carousel .slides {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wrapper main .sliderWrapper .carousel .slides .slide {
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+}
+
+.wrapper main .sliderWrapper .carousel .slides .slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper main .sliderWrapper .carousel .slides .slide .img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.wrapper main .sliderWrapper .carousel .btn {
+    position: absolute;
+    z-index: 2;
+    font-size: 4rem;
+    background: none;
+    border: none;
+    top: 44%;
+    color: rgb(240 240 240);
+    cursor: pointer;
+    border-radius: 0.25rem;
+    padding: 0 0.5rem;
+    background-color: rgb(238 104 95 / 60%);
+}
+
+.wrapper main .sliderWrapper .carousel .btn:hover,
+.wrapper main .sliderWrapper .carousel .btn:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.wrapper main .sliderWrapper .carousel .next {
+    right: 1rem;
+}
+
+.wrapper main .sliderWrapper .carousel .prev {
+    left: 1rem;
+}
+
+.bigPhoto {
+    top: 18%;
+    position: fixed;
+    width: 66%;
+    height: 66%;
+    box-shadow: 30px 30px 30px #d6e6f2;
+}
+
+/* videoWrapper */
+
+.wrapper .videoWrapper {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 0 10% 0;
+}
+
+.wrapper .videoWrapper .video {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .videoWrapper .video .videoIframe {
+    width: 100%;
+}
+
+/* footer */
+
+.wrapper footer {
+    display: flex;
+    width: 100%;
+    height: 4%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 3%;
+}
+
+.wrapper footer .logo {
+    width: 32%;
+    font-weight: 700;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper footer .dis {
+    display: flex;
+    justify-content: center;
+    width: 32%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #262729;
+}
+
+.wrapper footer nav {
+    width: 29%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #262729;
+    margin-left: 5%;
+    display: flex;
+}
+
+.wrapper footer nav div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper footer nav div img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 1300px) {
+    .wrapper header nav {
+        font-size: 12px;
+    }
+
+    .wrapper main .searchFon .sectionWrapper h1 {
+        font-size: 26px;
+    }
+
+    .wrapper main .searchFon .sectionWrapper p {
+        font-size: 12px;
+    }
+
+    .wrapper main #searchHotel {
+        top: 49%;
+    }
+
+    .wrapper main #searchHotel #search,
+    .wrapper main #searchHotel #date {
+        font-size: 10px;
+    }
+
+    .wrapper main .info .topText h2 {
+        font-size: 32px;
+    }
+
+    .wrapper main .info .topText p {
+        font-size: 14px;
+    }
+
+    .wrapper main .info .bottonText .imgBottonText div {
+        width: 55px;
+        height: 55px;
+    }
+
+    .wrapper main .info .bottonText .imgBottonText h4 {
+        font-size: 14px;
+    }
+
+    .wrapper main .info .bottonText .imgBottonText p {
+        font-size: 10px;
+    }
+
+    .wrapper main .hotelMenu h1 {
+        font-size: 32px;
+    }
+
+    .wrapper main .hotelMenu .allHotel .oneHotel .imgHotel img {
+        width: 90%;
+    }
+
+    .wrapper main .hotelMenu .allHotel .oneHotel p:nth-child(2) {
+        font-size: 17px;
+    }
+
+    .wrapper main .hotelMenu .allHotel .oneHotel p:nth-child(3) {
+        font-size: 12px;
+    }
+
+    .wrapper main .hotelMenu .allHotel .oneHotel p:nth-child(4) {
+        font-size: 14px;
+    }
+
+    .wrapper main .hotelMenu .allHotel .oneHotel h3 {
+        font-size: 22px;
+    }
+
+    .wrapper main .hotelMenu .allHotel .oneHotel h3 span {
+        font-size: 14px;
+    }
+
+    .wrapper main .hotelMenu .allHotel .oneHotel .icon_group div p {
+        font-size: 12px;
+    }
+
+    .wrapper main .hotelMenu .allHotel .oneHotel .showMap,
+    .wrapper main .hotelMenu .allHotel .oneHotel .showImg,
+    .wrapper main .hotelMenu .allHotel .oneHotel .showVideo {
+        font-size: 18px;
+    }
+
+    .wrapper footer nav div img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .wrapper footer {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
